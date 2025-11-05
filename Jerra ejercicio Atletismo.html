@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerra Wright - Mental Preparation for 1500m</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS configuration for color and font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#0f172a', // Slate 900
+                        'accent-blue': '#06b6d4', // Cyan 500
+                        'accent-orange': '#ea580c', // Orange 700
+                        'card-bg': '#1e293b', // Slate 800
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for the breathing animation */
+        @keyframes breathIn {
+            0% { transform: scale(0.6); opacity: 0.5; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        @keyframes breathHold {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        @keyframes breathOut {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(0.6); opacity: 0.5; }
+        }
+        .breathing-box {
+            /* 4s matches the duration of a single phase (4 seconds) */
+            transition: all 4s linear; 
+        }
+        .animate-in {
+            animation: breathIn 4s forwards;
+        }
+        .animate-hold {
+            animation: breathHold 4s forwards;
+        }
+        .animate-out {
+            animation: breathOut 4s forwards;
+        }
+        /* Hide scrollbar if not needed */
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body class="bg-primary-dark min-h-screen text-gray-100 font-sans p-4 md:p-8">
+
+    <div class="max-w-6xl mx-auto space-y-12">
+        
+        <!-- Header and Athlete Name -->
+        <header class="text-center bg-card-bg p-6 rounded-xl shadow-2xl border-b-4 border-accent-blue">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-accent-blue tracking-tight">
+                Jerra Wright
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mt-2">
+                Mental Training Platform for 1500m
+            </p>
+        </header>
+
+        <!-- Section 1: Introduction and Purpose -->
+        <section class="bg-card-bg p-6 rounded-xl shadow-lg border-l-4 border-accent-orange">
+            <h2 class="text-2xl md:text-3xl font-bold text-accent-orange mb-4">1) Introduction to the Real Practice</h2>
+            <p class="text-lg leading-relaxed text-gray-300">
+                This is more than just a run; it is a **real practice** of the mindset and objective you want to achieve in January. 
+                Here you will be able to put into practice some key **psychological strategies** and assess your **physical condition**. 
+                The goal is to gather valuable information to continue adjusting your training so that you reach your best mental and physical state for the actual competition. 
+                Every step counts!
+            </p>
+        </section>
+
+        <!-- Section 2 & 3: Objective and Self-Instructions (Focus Grid) -->
+        <div class="grid md:grid-cols-2 gap-8">
+            
+            <!-- Box 2: Working Through Pain -->
+            <div class="bg-card-bg p-6 rounded-xl shadow-lg border-b-4 border-red-500">
+                <h2 class="text-2xl font-bold text-red-400 mb-4 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    2) Objective and Pain Management
+                </h2>
+                <div class="text-center bg-red-900/30 p-4 rounded-lg border-l-2 border-red-500">
+                    <p class="text-xl font-semibold text-red-300 mb-2">WORK THROUGH THE PAIN WHEN IT APPEARS.</p>
+                    <p class="text-3xl font-extrabold text-red-100 italic">
+                        "I WAS WAITING FOR YOU - Maintaining Pace"
+                    </p>
+                    <p class="text-sm text-gray-400 mt-2">
+                        (When the pain appears, smile and reply mentally with this phrase.)
+                    </p>
+                </div>
+            </div>
+
+            <!-- Box 3: Self-Instructions for Control -->
+            <div class="bg-card-bg p-6 rounded-xl shadow-lg border-b-4 border-green-500">
+                <h2 class="text-2xl font-bold text-green-400 mb-4 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.276a2.001 2.001 0 01.329 2.113l-1.4 3.788a2 2 0 01-1.63 1.144l-2.73 0a2.001 2.001 0 01-1.63-1.144l-1.4-3.788a2.001 2.001 0 01.329-2.113c.277-.246.602-.435.955-.558L12 6l.955-.558c.353.123.678.312.955.558z" />
+                    </svg>
+                    3) Self-Instructions for Control
+                </h2>
+                <ul class="space-y-3 text-lg font-medium text-gray-300">
+                    <li class="bg-green-900/30 p-3 rounded-md flex items-center">
+                        <span class="text-green-400 mr-3 text-2xl font-mono">»</span>
+                        "Today I choose my thoughts"
+                    </li>
+                    <li class="bg-green-900/30 p-3 rounded-md flex items-center">
+                        <span class="text-green-400 mr-3 text-2xl font-mono">»</span>
+                        "My body is trained"
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 4: Box Breathing (4-4-4) with Interactivity -->
+        <section class="bg-card-bg p-6 rounded-xl shadow-2xl border-t-4 border-accent-blue">
+            <h2 class="text-2xl md:text-3xl font-bold text-accent-blue mb-4 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                4) Box Breathing 4-4-4
+            </h2>
+            
+            <!-- Technique Instructions -->
+            <p class="text-lg leading-relaxed text-gray-300 mb-6">
+                Technique to calm heart rate and lower the level of activation.
+                <span class="font-semibold text-accent-blue block mt-2">Daily Practice:</span> 2 minutes, twice a day, in a quiet place, without noise, and where you are alone. Help your mind feel how cold air enters your lungs and warm air leaves through your mouth.
+                <span class="font-semibold text-accent-orange block mt-1">Reminder:</span> Do not practice this exercise right after waking up or before going to bed. Use it if necessary on the day of the competition.
+            </p>
+
+            <!-- Breathing Interface -->
+            <div class="flex flex-col items-center justify-center bg-gray-800 p-6 rounded-lg shadow-inner">
+                
+                <!-- Time and Cycle Indicator -->
+                <div class="mb-6 text-center">
+                    <p id="instruction" class="text-4xl font-extrabold text-accent-blue">INHALATION</p>
+                    <p id="timerDisplay" class="text-6xl font-black mt-2 text-accent-orange">4</p>
+                    <p id="cycleDisplay" class="text-lg text-gray-400 mt-1">Session: 0:00 / 2:00</p>
+                </div>
+
+                <!-- Visual Breathing Box -->
+                <div id="breathingBox" class="breathing-box h-40 w-40 bg-accent-blue rounded-xl shadow-xl transition-all duration-300">
+                </div>
+                
+                <!-- Controls -->
+                <div class="mt-8 flex space-x-4">
+                    <button type="button" id="startButton" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg shadow-md transition duration-300">
+                        START PRACTICE (2 Min)
+                    </button>
+                    <button type="button" id="stopButton" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg shadow-md transition duration-300" disabled>
+                        STOP
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Post-Race Review Questionnaire -->
+        <section class="bg-card-bg p-6 rounded-xl shadow-2xl border-b-4 border-yellow-500">
+            <h2 class="text-2xl md:text-3xl font-bold text-yellow-400 mb-6 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 002 2h2a2 2 0 002-2" />
+                </svg>
+                5) Post-Race Review Questionnaire
+            </h2>
+
+            <form id="reviewForm" class="space-y-6">
+                <!-- Question 1 -->
+                <div>
+                    <label for="q1" class="block text-xl font-medium mb-2 text-gray-300">
+                        1) What I did control well? <span class="text-gray-400 font-normal italic">(Focus & Strengths)</span>
+                    </label>
+                    <textarea id="q1" rows="3" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-yellow-500 focus:border-yellow-500" placeholder="Write your answer here..."></textarea>
+                </div>
+
+                <!-- Question 2 -->
+                <div>
+                    <label for="q2" class="block text-xl font-medium mb-2 text-gray-300">
+                        2) What I did learn? <span class="text-gray-400 font-normal italic">(Learning & Growth)</span>
+                    </label>
+                    <textarea id="q2" rows="3" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-yellow-500 focus:border-yellow-500" placeholder="Write your answer here..."></textarea>
+                </div>
+
+                <!-- Question 3 -->
+                <div>
+                    <label for="q3" class="block text-xl font-medium mb-2 text-gray-300">
+                        3) What I will do differently next time I train this performance objective?
+                    </label>
+                    <textarea id="q3" rows="3" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-yellow-500 focus:border-yellow-500" placeholder="Write your answer here..."></textarea>
+                </div>
+
+                <!-- Buttons -->
+                <div class="pt-4 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <button type="button" id="resetButton" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-lg shadow-md transition duration-300">
+                        RESET QUESTIONNAIRE
+                    </button>
+                    <button type="button" id="copyButton" class="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-8 rounded-lg shadow-md transition duration-300">
+                        COPY SUMMARY FOR SENDING
+                    </button>
+                </div>
+            </form>
+            
+            <!-- Message Box for Copy Success -->
+            <div id="copyMessage" class="mt-4 p-3 bg-green-900 text-green-300 rounded-lg text-center hidden">
+                Summary copied to clipboard! Ready to send.
+            </div>
+            
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-500 pt-8 border-t border-gray-700 mt-12">
+            <p>&copy; Mental Focus Platform. Maximum Performance, Jerra!</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // Note: Keeping variable names in Spanish/English mix for consistency with the original code structure,
+        // but all UI text is now in English.
+
+        const instruction = document.getElementById('instruction');
+        const timerDisplay = document.getElementById('timerDisplay');
+        const cycleDisplay = document.getElementById('cycleDisplay');
+        const breathingBox = document.getElementById('breathingBox');
+        const startButton = document.getElementById('startButton');
+        const stopButton = document.getElementById('stopButton');
+
+        // References for the new Questionnaire
+        const q1 = document.getElementById('q1');
+        const q2 = document.getElementById('q2');
+        const q3 = document.getElementById('q3');
+        const resetButton = document.getElementById('resetButton');
+        const copyButton = document.getElementById('copyButton');
+        const copyMessage = document.getElementById('copyMessage');
+
+
+        let intervalId = null;
+        let sessionTimerId = null;
+        let sessionSeconds = 0;
+        let phase = 0; // 0: Inhale, 1: Hold Full, 2: Exhale, 3: Hold Empty
+        const duration = 4; // Seconds per phase (4-4-4-4)
+        const totalSessionTime = 120; // 2 minutes
+
+        // Helper function to convert seconds to MM:SS format
+        const formatTime = (totalSeconds) => {
+            const minutes = Math.floor(totalSeconds / 60);
+            const seconds = totalSeconds % 60;
+            return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+        };
+
+        const updateVisuals = (currentPhase, timeLeft) => {
+            let nextInstruction = "";
+            let newColor = '';
+            
+            // Clear previous animation classes
+            breathingBox.classList.remove('animate-in', 'animate-hold', 'animate-out', 'bg-accent-blue', 'bg-accent-orange', 'bg-green-500', 'bg-gray-500');
+
+            if (currentPhase === 0) {
+                // INHALE (4s)
+                nextInstruction = "INHALATION";
+                newColor = 'bg-green-500';
+                breathingBox.classList.add('animate-in');
+            } else if (currentPhase === 1) {
+                // HOLD (4s) - Lungs Full
+                nextInstruction = "HOLD FULL";
+                newColor = 'bg-accent-orange';
+                breathingBox.classList.add('animate-hold');
+            } else if (currentPhase === 2) {
+                // EXHALE (4s)
+                nextInstruction = "EXHALATION";
+                newColor = 'bg-accent-blue';
+                breathingBox.classList.add('animate-out');
+            } else { // currentPhase === 3
+                // HOLD (4s) - Lungs Empty
+                nextInstruction = "HOLD EMPTY";
+                newColor = 'bg-gray-500';
+                breathingBox.classList.add('animate-hold');
+            }
+
+            instruction.textContent = nextInstruction;
+            timerDisplay.textContent = timeLeft;
+            breathingBox.classList.add(newColor);
+        };
+
+        const tick = () => {
+            let timeLeft = duration;
+            updateVisuals(phase, timeLeft);
+
+            const phaseInterval = setInterval(() => {
+                timeLeft--;
+                timerDisplay.textContent = timeLeft;
+
+                if (timeLeft <= 0) {
+                    clearInterval(phaseInterval);
+                    
+                    // Advance to the next phase
+                    phase = (phase + 1) % 4; 
+                    tick(); // Start the next phase
+                }
+            }, 1000);
+            
+            // Save the phase interval ID so we can stop it
+            intervalId = phaseInterval; 
+        };
+
+        const startBreathing = () => {
+            startButton.disabled = true;
+            stopButton.disabled = false;
+            
+            sessionSeconds = 0;
+            phase = 0; // Reset phase
+            cycleDisplay.textContent = `Session: ${formatTime(sessionSeconds)} / ${formatTime(totalSessionTime)}`;
+
+            // Start the session timer
+            sessionTimerId = setInterval(() => {
+                sessionSeconds++;
+                cycleDisplay.textContent = `Session: ${formatTime(sessionSeconds)} / ${formatTime(totalSessionTime)}`;
+
+                if (sessionSeconds >= totalSessionTime) {
+                    stopBreathing(true);
+                }
+            }, 1000);
+
+            // Start the breathing cycle
+            tick();
+        };
+
+        const stopBreathing = (isCompleted = false) => {
+            // Stop both timers
+            if (intervalId) clearInterval(intervalId);
+            if (sessionTimerId) clearInterval(sessionTimerId);
+            
+            intervalId = null;
+            sessionTimerId = null;
+
+            // Reset the interface
+            startButton.disabled = false;
+            stopButton.disabled = true;
+            
+            timerDisplay.textContent = '4';
+            breathingBox.classList.remove('animate-in', 'animate-hold', 'animate-out', 'bg-accent-orange', 'bg-green-500', 'bg-gray-500');
+            breathingBox.classList.add('bg-accent-blue');
+            
+            if (isCompleted) {
+                instruction.textContent = "PRACTICE COMPLETE!";
+                cycleDisplay.textContent = `Session: 2:00 / 2:00`;
+            } else {
+                instruction.textContent = "READY TO INHALE";
+                cycleDisplay.textContent = `Session: 0:00 / 2:00`;
+            }
+        };
+
+        // --- Questionnaire Functions ---
+
+        const resetForm = () => {
+            q1.value = '';
+            q2.value = '';
+            q3.value = '';
+            copyMessage.classList.add('hidden');
+        };
+
+        const copySummary = () => {
+            const summaryText = 
+`--- Post-Race Summary: Jerra Wright (1500m) ---
+
+1) What I did control well? (Focus & Strengths)
+------------------------------------------------
+${q1.value || 'No response recorded.'}
+
+2) What I did learn? (Learning & Growth)
+---------------------------------------
+${q2.value || 'No response recorded.'}
+
+3) What I will do differently next time I train this performance objective?
+-------------------------------------------------------------------------
+${q3.value || 'No response recorded.'}
+
+---------------------------------------------------
+`;
+            
+            // Use a temporary textarea for the execCommand
+            const tempTextarea = document.createElement('textarea');
+            tempTextarea.value = summaryText;
+            document.body.appendChild(tempTextarea);
+            tempTextarea.select();
+            
+            try {
+                // document.execCommand('copy') is more compatible in iFrame/Sandbox environments
+                const successful = document.execCommand('copy');
+                if (successful) {
+                    copyMessage.textContent = "Summary copied to clipboard! Ready to send.";
+                    copyMessage.classList.remove('hidden');
+                    copyMessage.classList.remove('bg-red-900', 'text-red-300');
+                    copyMessage.classList.add('bg-green-900', 'text-green-300');
+                } else {
+                    throw new Error('Copy command failed.');
+                }
+            } catch (err) {
+                console.error('Failed to copy text:', err);
+                copyMessage.textContent = "Copy Error! Please copy the text manually.";
+                copyMessage.classList.remove('hidden');
+                copyMessage.classList.remove('bg-green-900', 'text-green-300');
+                copyMessage.classList.add('bg-red-900', 'text-red-300');
+            }
+            
+            document.body.removeChild(tempTextarea);
+
+            // Hide the message after 5 seconds
+            setTimeout(() => {
+                copyMessage.classList.add('hidden');
+            }, 5000);
+        };
+
+
+        // Event Listeners
+        startButton.addEventListener('click', startBreathing);
+        stopButton.addEventListener('click', () => stopBreathing(false));
+        
+        // Event Listeners for the Questionnaire
+        resetButton.addEventListener('click', resetForm);
+        copyButton.addEventListener('click', copySummary);
+
+
+        // Initialize the view
+        updateVisuals(0, 4); // Show INHALATION/4s on load
+
+    </script>
+</body>
+</html>
